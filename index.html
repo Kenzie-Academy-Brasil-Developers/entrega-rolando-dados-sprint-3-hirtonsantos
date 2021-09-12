@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rolando dados</title>
+    <style>
+        div {
+            display: inline-flex;
+            flex-direction: column-reverse;
+            max-width: 20px;
+            align-items: center;
+            background-color: red;
+            border: solid 0.1px;
+            margin: 2px
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        @media (min-width:500px){
+            div {
+                max-width: 40px;
+                background-color: aqua;
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>Rolando dados</h1>
 
-    <script src="dice-roller.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
