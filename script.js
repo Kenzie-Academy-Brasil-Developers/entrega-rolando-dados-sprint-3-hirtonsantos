@@ -4,23 +4,26 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
   }
 
+
 let array = []
 function arrayInitialization(){
     for (let i = 0; i <= 10; i++) {
         array[i] = 0 
-    } return array
+    } 
+    return array
 }
 
 function lancamentos(){
     arrayInitialization()
     for (let i = 0; i < 1000; i++) {
-        let dadoOne = getRandomInt(1,7)
-        let dadoTwo = getRandomInt(1,7)
-        let soma = dadoOne + dadoTwo
+        let A = getRandomInt(1,7)
+        let B = getRandomInt(1,7)
+        let soma = A + B
         array[soma - 2] += 1
-        } return (mostrarTexto(), graficoBarras())
+        } 
+        return (mostrarTexto(), graficoBarras())  
 }
-document.write (lancamentos())
+lancamentos()
 
 function mostrarTexto(){
     const body = document.querySelector("body")
